@@ -37,12 +37,6 @@ pip install -r requirements.txt
 jupyter notebook notebooks/movie_recommender.ipynb
 ```
 
-## What I'd improve next
-
-- Hold out part of the training ratings and report RMSE, so each change can be measured.
-- In the cold-start step, the genre lookup reads the raw genre string rather than the split list, so most new films fall back to the global mean. Passing the cleaned movie table, or using the content-similarity scores from step 1, would give those films a real prediction.
-- Add item bias alongside user bias, and tune the number of SVD factors.
-
 ---
 
 Prince Adufah · [adufah.com](https://adufah.com) · [LinkedIn](https://www.linkedin.com/in/princeadufah)
